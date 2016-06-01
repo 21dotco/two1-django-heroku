@@ -20,4 +20,5 @@ import hello.views
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^buy$', hello.views.buy),
+    url(r'^manifest$', hello.views.manifest),
 ]
