@@ -33,6 +33,8 @@ TWO1_WALLET_MNEMONIC = os.environ.get("TWO1_WALLET_MNEMONIC")
 TWO1_USERNAME = os.environ.get("TWO1_USERNAME")
 WALLET = Two1Wallet.import_from_mnemonic(mnemonic=TWO1_WALLET_MNEMONIC)
 
+HASHIDS_SALT = os.environ.get("HASHIDS_SALT")
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
