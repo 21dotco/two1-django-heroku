@@ -37,14 +37,12 @@ HASHIDS_SALT = os.environ.get("HASHIDS_SALT")
 
 DEBUG = os.environ.get('DEBUG', 'False').lower() in ['t', 'true', '1']
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
+# unused in this app
 SECRET_KEY = 'g!&#vtozb7t363_5ow+p%rhm53w31rr=abf%c!0f$4#8jb!7us'
 
-
-ALLOWED_HOSTS = []
+# TODO: Set this to your specific hostname when you turn off DEBUG
+# or else you will get 400 errors.
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
