@@ -4,4 +4,4 @@ See the tutorial at [https://21.co/learn/django-heroku/](https://21.co/learn/dja
 
 ## Quick deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/21dotco/django-heroku-21-tutorial/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/21dotco/two1-django-heroku/tree/master)

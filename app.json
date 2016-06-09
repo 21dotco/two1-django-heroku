@@ -8,7 +8,7 @@
     "21"
   ],
   "website": "https://21.co",
-  "repository": "https://github.com/21dotco/django-heroku-21-tutorial",
+  "repository": "https://github.com/21dotco/two1-django-heroku",
   "logo": "https://assets.21.co/shared/img/21logo.png",
   "scripts": {
     "postdeploy": "python manage.py migrate"
