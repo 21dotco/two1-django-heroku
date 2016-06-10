@@ -4,7 +4,7 @@ import hashids
 import logging
 
 from django.core.exceptions import ObjectDoesNotExist
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from rest_framework.decorators import api_view
 from two1.bitserv.django import payment
 
@@ -77,3 +77,14 @@ def redeem(request):
 def manifest(request):
     with open(settings.BASE_DIR + "/hello/manifest.yaml", 'r') as infile:
         return JsonResponse(yaml.load(infile), status=200)
+
+
+def welcome(request):
+    html = '''
+<html><body>
+<h1>It works!</h1>
+<p>Your machine-payable app works. If you don't know how you got here, check out the tutorial at
+<a href="https://21.co/learn/django-heroku">21.co/learn</a></p>
+</body></html>
+    '''
+    return HttpResponse(html)
