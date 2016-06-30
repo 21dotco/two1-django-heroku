@@ -31,27 +31,12 @@ necessary using `git rebase -i` (interactive rebase) and `git push -f` (force
 push). Commits addressing review comments and test failures should be squashed
 if necessary.
 
-## Tests
-
-Our test suite is automatically run on each commit of each pull request.
-
-Add or modify tests as necessary, and run tests locally using
-[pytest](http://pytest.org/)
-
-```shell
-$ py.test
-```
-
 # Opening issues
 
 ## Bug reports
 
 Bug reports should include clear instructions to reproduce the bug. Include a
-stack trace if applicable using the `--debug` flag:
-
-```shell
-21 --debug status
-```
+stack trace if applicable.
 
 ## Security issues
 
